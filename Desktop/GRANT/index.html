@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+
+        footer{
+            background-color: #111;
+
+        }
+
+        .footerContainer{
+            display: flex;
+            justify-content: center;
+        }
+
+        .socialIcons{
+            bottom: auto;
+        }
+
+        .socialIcons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color:#fff;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .socialIcons a i{
+            font-size: 2em;
+            color: black;
+            opacity:0.9;
+        }
+
+        .socialIcons a:hover{
+            background-color: #111;
+            transition: 0.5s;
+
+        }
+
+        .socialIcons a:hover i{
+            color: white;
+            transition:0.5s;
+        }
+
+        .footerNav{
+            margin: 30px 0;
+        }
+
+        .footerNav ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+        }
+
+        .footerNav ul li a{
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size:1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .footerNav ul li a{
+            opacity: 1;
+        }
+
+        .footerBottom{
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footerBottom{
+            color: white;
+        }
+
+        .designer{
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+            color: rgb(248, 109, 132);
+
+        }
+
+        @media (max-width:700px){
+            .footerNav ul{
+                flex-direction: column;
+
+            }
+            .footerNav ul li{
+                width:100px;
+                text-align: center;
+                margin: 10px;
+
+            }
+
+          
+        }
+
+      /* General Styles for Navigation */
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 100px;
+    position: fixed;
+    background-color: #333; /* Added background color for visibility */
+    top: 0; /* Ensure the nav is fixed to the top */
+    left: 0; /* Ensure the nav is fixed to the left */
+    z-index: 1000; /* Ensure the nav stays on top of other elements */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav items */
+}
+
+/* Styling for the logo container */
+nav .logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+nav .logo p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the navigation list */
+nav ul {
+    display: flex; /* Align items horizontally */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Styling for list items within the nav */
+nav li {
+    margin-left: 30px; /* Space between list items */
+}
+
+/* Styling for links within the list items */
+nav li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 75px; /* Center align text vertically */
+}
+
+/* Hover effect for the links */
+nav li a:hover {
+    color: #6985ff;
+    transition: color 0.4s ease-in-out; /* Only animate color change */
+}
+
+/* Media Query for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust padding for nav */
+    nav {
+        padding: 0 20px; /* Reduced padding for smaller screens */
+    }
+
+    /* Reduce the size of the logo */
+    nav .logo p {
+        font-size: 24px; /* Adjust logo font size */
+    }
+
+    /* Ensure navigation items are still on the same row */
+    nav ul {
+        margin-left: auto; /* Push nav items to the right */
+    }
+
+    /* Adjust link padding */
+    nav li a {
+        padding: 0 15px; /* Adjust padding to fit space */
+        font-size: 16px; /* Reduce font size */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    /* Further reduce padding and font sizes if needed */
+    nav {
+        padding: 0 10px; /* Further reduced padding */
+    }
+
+    /* Further reduce the size of the logo */
+    nav .logo p {
+        font-size: 10px; /* Further adjust logo font size */
+    }
+
+    /* Adjust link padding for mobile */
+    nav li a {
+        padding: 0 6px; /* Further adjust padding */
+        font-size: 7px; /* Further reduce font size */
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>iamgrant_pictures</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="">service</a></li> -->
+            <li><a href="">contact</a></li>
+        </ul>
+        
+        </nav>
+        
+    <h3 class="heading">videos gallery</h3>
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <video src="images/train video FREE.MP4 "controls muted autoplay></video>
+                <h3 class="title">0.1 Train video</h3>
+            </div>
+        </div>
+        <div class="video-list">
+            <div class="vid active">
+                <video src="images/train video FREE.MP4 "  muted ></video>
+                <h3 class="title">0.1 Train Video</h3>
+            </div>
+            <div class="vid">
+                <video src="images/abj late night.MP4 "  muted></video>
+                <h3 class="title">0.2 Abuja Late Night</h3>
+            </div>
+            <div class="vid">
+                <video src="images/kkfc.MP4"  muted ></video>
+                <h3 class="title">0.3 Kkfc Video</h3>
+            </div>
+            <div class="vid">
+                <video src="images/rfA.MP4" muted ></video>
+                <h3 class="title">0.4 Rfa Video</h3>
+            </div>
+            <div class="vid">
+                <video src="images/new viddd (1).MP4 "muted ></video>
+                <h3 class="title">0.5 New Video</h3>
+            </div>
+            <div class="vid">
+                <video src="images/NIGHT DRIVE GUZAPE.MP4 " muted ></video>
+                <h3 class="title">0.6 Night Drive</h3>
+            </div>
+            <div class="vid">
+                <video src="images/rain eve.MP4" muted ></video>
+                <h3 class="title">0.7 Rain Evening</h3>
+            </div>
+            <div class="vid">
+                <video src="images/quick film rain.MP4 "muted ></video>
+                <h3 class="title">0.8 Quick Film Rain</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const listVideo = document.querySelectorAll('.video-list .vid');
+        const mainVideo = document.querySelector('.main-video video');
+        const title = document.querySelector('.main-video .title');
+
+        if (listVideo.length > 0 && mainVideo && title) {
+            listVideo.forEach(video => {
+                video.addEventListener('click', () => {
+                    // Remove 'active' class from all videos
+                    listVideo.forEach(vid => vid.classList.remove('active'));
+
+                    // Add 'active' class to the clicked video
+                    video.classList.add('active');
+
+                    // Update the main video and title
+                    if (video.classList.contains('active')) {
+                        // Select the video element directly
+                        const videoSrc = video.querySelector('video').getAttribute('src');
+                        const videoTitle = video.querySelector('.title').textContent;
+
+                        // Update the main video src and title
+                        mainVideo.src = videoSrc;
+                        title.textContent = videoTitle;
+                    }
+                });
+            });
+        }
+    });
+</script>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-whatsapp"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <!-- <li><a href="">Our Team</a></li> -->
+            </ul>
+        </div>
+       
+    </div>
+    <div class="footerBottom">
+        <p>copyright &copy;2024; Designed by <span class="designer"> honey</span></p>
+    </div>
+   </footer>
+
+
+</body>
+</html>

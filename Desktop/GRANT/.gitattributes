@@ -1,0 +1,3 @@
+*.MP4 filter=lfs diff=lfs merge=lfs -text
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.mp4--everything filter=lfs diff=lfs merge=lfs -text
